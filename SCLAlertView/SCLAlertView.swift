@@ -46,7 +46,7 @@ public enum SCLActionType {
 }
 
 // Button sub-class
-public class SCLButton: UIButton {
+@objc public class SCLButton: UIButton {
     var actionType = SCLActionType.None
     var target:AnyObject!
     var selector:Selector!
@@ -101,7 +101,7 @@ let kCircleHeightBackground: CGFloat = 62.0
 public typealias DismissBlock = () -> Void
 
 // The Main Class
-public class SCLAlertView: UIViewController {
+@objc public class SCLAlertView: UIViewController {
     
     public struct SCLAppearance {
         let kDefaultShadowOpacity: CGFloat
